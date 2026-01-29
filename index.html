@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Education & Assessment Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<<body>
+
+<div class="container">
+
+    <!-- HOME SECTION -->
+    <div id="home">
+        <h1>Web Development Quiz</h1>
+        <p>Select difficulty level</p>
+
+        <div class="levels">
+            <button class="level-btn" onclick="startQuiz('beginner')">Beginner</button>
+            <button class="level-btn" onclick="startQuiz('intermediate')">Intermediate</button>
+            <button class="level-btn" onclick="startQuiz('advanced')">Advanced</button>
+        </div>
+    </div>
+
+    <!-- QUIZ SECTION -->
+    <div id="quiz" class="hide">
+
+        <div class="quiz-header">
+            <span>Question</span>
+            <span>Progress</span>
+        </div>
+
+        <h2 id="question">Question text</h2>
+
+        <div class="progress-box">
+            <div id="progress"></div>
+        </div>
+
+        <div id="options"></div>
+
+    </div>
+
+    <!-- RESULT SECTION -->
+    <div id="result" class="hide">
+        <h2>Quiz Result</h2>
+        <div id="finalScore"></div>
+        <button onclick="restart()">Go Home</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+
+</html>
